@@ -34,3 +34,19 @@ mysql> CREATE TABLE employee_payroll
     -> start DATE NOT NULL,
     -> PRIMARY KEY(id)
     -> );
+
+mysql> describe employee_payroll;
++--------+--------------+------+-----+---------+----------------+
+| Field  | Type         | Null | Key | Default | Extra          |
++--------+--------------+------+-----+---------+----------------+
+| id     | int unsigned | NO   | PRI | NULL    | auto_increment |
+| name   | varchar(150) | NO   |     | NULL    |                |
+| salary | double       | NO   |     | NULL    |                |
+| start  | date         | NO   |     | NULL    |                |
++--------+--------------+------+-----+---------+----------------+
+
+mysql> INSERT into employee_payroll(name,salary,start)
+    -> values("Rick",100000,'2020-10-20'),
+    -> ('Harry',150000,'2018-12-15'),
+    -> ('David',200000,'2017-01-01');
+
