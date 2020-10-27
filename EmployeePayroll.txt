@@ -1,1 +1,27 @@
 ******Welcome to Employee Payroll SQL Section******
+
+mysql> CREATE database payroll_service;
+Query OK, 1 row affected (0.20 sec)
+
+mysql> SHOW databases;
++--------------------+
+| Database           |
++--------------------+
+| bus                |
+| capgemini          |
+| geeks              |
+| information_schema |
+| mysql              |
+| new_data           |
+| oracle             |
+| payroll_service    |
+| performance_schema |
+| sakila             |
+| shirts_db          |
+| sys                |
+| testdb             |
+| world              |
++--------------------+
+
+mysql> USE payroll_service;
+Database changed
